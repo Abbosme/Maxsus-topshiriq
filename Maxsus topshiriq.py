@@ -188,3 +188,104 @@ ax.bar(x, y, width=1, edgecolor="white", linewidth=0.7)
 ax.set(xlim=(0 ,8), xticks=np,arange(1, 8),ylim=(0, 8), yticks=np.arange(1, 8))
 plt.show()
 
+import matplotlib.pyplot as plt
+import numpy as np
+
+x=np.array(['A','B','C','D'])
+y=np.array([3,8,1,10])
+
+plt.bar(x,y)
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x=np.array(['A','B','C','D'])
+y=np.array([3,8,1,10])
+
+plt.barh(x,y)
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x=np.array(['A','B','C','D'])
+y=np.array([3,8,1,10])
+
+plt.bar(x,y,width=0.1)
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x=np.array([35,25,25,15])
+
+
+plt.pie(y)
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x=np.array([35,25,25,15])
+mylabels = ["Apples","Bananas","Cherries","Dates"]
+
+plt.pie(y,labels=mylabels)
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x=np.array([35,25,25,15])
+mylabels = ["Apples","Bananas","Cherries","Dates"]
+
+plt.pie(y,labels=mylabels,startangle=90)
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x=np.array([35,25,25,15])
+mylabels = ["Apples","Bananas","Cherries","Dates"]
+myexplode = [0.2,0,0,0]
+plt.pie(y,labels=mylabels,startangle=90,explode=myexplode)
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x=np.array([35,25,25,15])
+mylabels = ["Apples","Bananas","Cherries","Dates"]
+myexplode = [0.2,0,0,0]
+plt.pie(y,labels=mylabels,startangle=90,explode=myexplode,shadow=True)
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x=np.array([35,25,25,15])
+mylabels = ["Apples","Bananas","Cherries","Dates"]
+mycolors = ["black","hotpink","b","#4CAF50"]
+myexplode = [0.2,0,0,0]
+plt.pie(y,labels=mylabels,startangle=90,explode=myexplode,colors=mycolors)
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x=np.array([35,25,25,15])
+mylabels = ["Apples","Bananas","Cherries","Dates"]
+
+plt.pie(y,labels=mylabels)
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x=np.array([35,25,25,15])
+mylabels = ["Apples","Bananas","Cherries","Dates"]
+
+plt.pie(y,labels=mylabels)
+plt.legend(title='Four Fruits')
+plt.show()
+
